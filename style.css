@@ -1,0 +1,69 @@
+html,
+body,
+container {
+  margin: 17 auto;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+  gap: 15px;
+}
+
+.container {
+  display: block;
+  margin: 0 auto;
+}
+
+.szul {
+  width: 50%;
+}
+
+.szul input {
+  width: 25%;
+  height: 2em;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  color: gray;
+}
+
+sup {
+  color: black !important;
+}
+
+h2 {
+  margin: 0 5em !important;
+  display: block;
+  widows: 90%;
+  color: darkblue;
+}
+
+#kotelezo {
+  margin-top: 15px;
+}
+
+span {
+  text-decoration: underline;
+  margin: 0px;
+  padding: 0px;
+}
+
+button {
+  float: right;
+  padding: 12px 20px;
+  margin-bottom: 15px;
+  color: white;
+  background-color: darkblue;
+  border: none;
+  border-radius: 25px;
+}
+
+h5 {
+  font-weight: 100;
+}
