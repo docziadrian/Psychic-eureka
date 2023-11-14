@@ -1,69 +1,124 @@
 html,
 body,
-container {
-  margin: 17 auto;
-  padding: 0;
-}
-
-.flex {
-  display: flex;
-  gap: 15px;
-}
-
 .container {
-  display: block;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  background-color: rgba(199, 170, 170, 0.527);
 }
 
-.szul {
-  width: 50%;
-}
-
-.szul input {
-  width: 25%;
-  height: 2em;
-}
-
-p {
+* {
   margin: 0;
   padding: 0;
 }
 
-p {
-  color: gray;
+input[type="radio"] {
+  margin-top: 8px;
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+  transform: scale(1.5);
+  margin-left: 2px;
 }
 
+input[type="radio"]:nth-child(2n) {
+  margin-right: 4px;
+}
+
+.w-64 {
+  display: flex;
+}
 sup {
-  color: black !important;
+  position: relative;
+  top: 4px;
 }
 
-h2 {
-  margin: 0 5em !important;
+.container {
+  padding-top: 25px !important;
   display: block;
-  widows: 90%;
-  color: darkblue;
+  margin: 0 auto;
+  text-align: center;
+  color: rgba(29, 29, 128, 0.712);
+  width: 50%;
+  background-color: white;
+  height: 40em;
+}
+
+.main {
+  color: rgba(0, 0, 0, 0.719) !important;
+  width: 90%;
+  text-align: left;
+  margin: auto;
+  background-color: white;
+}
+
+.flex {
+  display: flex;
+  justify-content: left;
+  gap: 20px;
+}
+
+input[type="text"] {
+  height: 2.1em;
+  width: 18.7em;
+}
+input[type="number"] {
+  height: 2em;
+  width: 5em;
+}
+
+::placeholder {
+  padding-left: 5px;
+}
+
+.email {
+  margin-top: 15px;
 }
 
 #kotelezo {
-  margin-top: 15px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.flex-2 {
+  display: flex;
+  margin: auto;
+  gap: 5px;
+  margin: 15px 0px !important;
 }
 
 span {
   text-decoration: underline;
-  margin: 0px;
-  padding: 0px;
+}
+
+#bold {
+  text-decoration: none !important;
+  font-weight: bold;
+}
+
+.flex-2 label {
+  margin-top: 8px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  opacity: 1;
+}
+
+input[type="checkbox"] {
+  outline: 3px auto rgba(255, 255, 255, 0.685);
+}
+
+input[type="radio"] {
+  outline: 3px auto rgba(255, 255, 255, 0.685);
 }
 
 button {
   float: right;
+  margin-right: 35px;
   padding: 12px 20px;
-  margin-bottom: 15px;
+  border-radius: 20px;
+  background-color: rgb(25, 25, 138);
+  border: 0px solid white;
   color: white;
-  background-color: darkblue;
-  border: none;
-  border-radius: 25px;
-}
-
-h5 {
-  font-weight: 100;
+  font-weight: bold;
 }

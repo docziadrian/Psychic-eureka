@@ -3,74 +3,97 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Forms</title>
+    <title>Űrlap</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <h2>Regisztráció</h2>
-    <div class="section">
-      <p>Megszólítás<sup>*</sup></p>
-      <input type="checkbox" name="nem" id="holgy" />
-      <label for="nem">Hölgy</label>
-      <input type="checkbox" name="nem" id="ur" />
-      <label for="nem">Úr</label>
+    <div class="container">
+      <h2>Regisztráció</h2>
+      <div class="main">
+        <p>Megszólítás<sup>*</sup></p>
+        <input type="radio" name="holgy" id="holgy" />
+        <label for="holgy">Hölgy</label>
+        &nbsp; &nbsp;
+        <input type="radio" name="holgy" id="holgy" />
+        <label for="holgy">Úr</label>
 
-      <div class="flex">
-        <div class="">
-          <p>Vezetéknév<sup>*</sup></p>
-          <input type="text" name="vnev" id="vnev" />
-        </div>
-        <div class="">
-          <p>Keresztnév<sup>*</sup></p>
-          <input type="text" name="vnev" id="vnev" />
-        </div>
-      </div>
-
-      <div class="szul">
-        <p>Születési dátum<sup>*</sup></p>
-        <input type="number" placeholder="ÉÉÉÉ" />
-        <input type="number" placeholder="HH" />
-        <input type="number" placeholder="NN" />
-      </div>
-
-      <div class="flex">
-        <div class="">
-            <p>E-Mail cím<sup>*</sup></p>
-            <input type="email" name="" id="">
-        </div>
-        <div class="">
-            <p>E-Mail cím ismételt megadása<sup>*</></p>
-            <input type="email" name="" id="">
-        </div>
-      </div>
-
-      <div class="flex">
-            <div class="">
-                <p>Jelszó<sup>*</sup></p>
-                <input type="password" name="" id="">
-            </div>
-            <div class="">
-                <p>Jelszó ismételt megadása<sup>*</></p>
-                <input type="password" name="" id="">
-            </div>
+        <div class="flex">
+          <div class="">
+            <label for="vezeteknev">Vezetéknév<sup>*</sup></label> <br />
+            <input type="text" name="vezeteknev" id="vezeteknev" />
           </div>
+          <div class="">
+            <label for="keresztnev">Keresztnév<sup>*</sup></label> <br />
+            <input type="text" name="keresztnev" id="keresztnev" />
+          </div>
+        </div>
+
+        <p>Születési dátum<sup>*</sup></p>
+        <div class="flex">
+          <input type="number" placeholder="ÉÉÉÉ" name="ev" id="ev" />
+          <input type="number" placeholder="HH" name="h" id="h" />
+          <input type="number" placeholder="NN" name="n" id="n" />
+        </div>
+
+        <div class="flex email">
+          <div class="">
+            <label for="vezeteknev">E-Mail cím<sup>*</sup></label> <br />
+            <input type="text" name="email" id="email" />
+          </div>
+          <div class="">
+            <label for="vezeteknev"
+              >E-Mail cím ismételt megadása<sup>*</sup></label
+            >
+            <br />
+            <input type="text" name="emailU" id="emailU" />
+          </div>
+        </div>
+
+        <div class="flex">
+          <div class="">
+            <label for="jelszo">Jelszó<sup>*</sup></label> <br />
+            <input type="text" name="jelszo" id="jelszo" />
+          </div>
+          <div class="">
+            <label for="jelszo">Jelszó ismételt megadása<sup>*</sup></label>
+            <br />
+            <input type="text" name="emailU" id="emailU" />
+          </div>
+        </div>
+
+        <p id="kotelezo">* - kötelező mezők</p>
+        <div class="flex-2">
+          <input
+            style="height: 2em; width: 2em"
+            type="checkbox"
+            name="tudom"
+            id="tudom"
+          />
+          <label for="tudom"
+            >Tudomásul vettem és elfogadom az
+            <span>Általáos Szerződési Feltételek</span>-et, valamint az
+            <span>Adatkezelési tájékoztató</span>-ban foglaltakat.<sup
+              >*</sup
+            ></label
+          >
+        </div>
+        <div class="flex-2">
+          <input
+            style="height: 2em; width: 2em"
+            type="checkbox"
+            name="tudom2"
+            id="tudom2"
+          />
+          <label for="tudom2"
+            >Szeretnék feliratkozni a <span id="bold">A dm Hírlevelem</span>-re.
+            A hírlevélről bármikor leiratkozhatok.
+            <span>A Hozzájárulás a dm hírlevélhez</span>-t elolvastam és
+            elfogadom.<sup>*</sup></label
+          >
+        </div>
+
+        <button>Tovább</button>
+      </div>
     </div>
-
-    <p id="kotelezo">* - kötelező mezők</p>
-
-    <div class="flex" style="margin-bottom: -10px !important">
-        <input type="checkbox" name="" id="">
-        <h5>Tudomásul vettem és elfogadom az <span>Általáos Szerződési Feltételek</span>-et, valamint az <span>Adatkezelési tájékoztató</span>-ban foglaltakat.<sup>*</sup></h5>
-    </div>
-
-
-
-    <div class="flex">
-        <input type="checkbox" name="" id="">
-        <h5>Szeretnék feliratkozni a <span style="text-decoration: none; font-weight: bold">A dm Hírlevelem</span>-re. A hírlevélről bármikor leiratkozhatok. A <span>Hozzájárulás a dm hírlevélhez</span>-t elolvastam és elfogadom.</h5>
-    </div>
-
-    <button>Tovább</button>
   </body>
 </html>
