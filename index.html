@@ -3,97 +3,147 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Űrlap</title>
+    <title>Document</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./input.css" />
   </head>
   <body>
     <div class="container">
-      <h2>Regisztráció</h2>
-      <div class="main">
-        <p>Megszólítás<sup>*</sup></p>
-        <input type="radio" name="holgy" id="holgy" />
-        <label for="holgy">Hölgy</label>
-        &nbsp; &nbsp;
-        <input type="radio" name="holgy" id="holgy" />
-        <label for="holgy">Úr</label>
+      <main>
+        <head>
+          <h1>Create Account</h1>
+          <hr />
+        </head>
 
-        <div class="flex nev">
+        <div class="flex-between">
           <div class="">
-            <label for="vezeteknev">Vezetéknév<sup>*</sup></label> <br />
-            <input type="text" name="vezeteknev" id="vezeteknev" />
+            <label for="fname">First name <sup>*</sup></label> <br />
+            <input
+              type="text"
+              name="fname"
+              id="fname"
+              placeholder="enter your first name"
+            />
           </div>
           <div class="">
-            <label for="keresztnev">Keresztnév<sup>*</sup></label> <br />
-            <input type="text" name="keresztnev" id="keresztnev" />
-          </div>
-        </div>
-
-        <p id="le">Születési dátum<sup>*</sup></p>
-        <div class="flex nev">
-          <input type="number" placeholder="ÉÉÉÉ" name="ev" id="ev" />
-          <input type="number" placeholder="HH" name="h" id="h" />
-          <input type="number" placeholder="NN" name="n" id="n" />
-        </div>
-
-        <div class="flex email">
-          <div class="">
-            <label for="vezeteknev">E-Mail cím<sup>*</sup></label> <br />
-            <input type="text" name="email" id="email" />
-          </div>
-          <div class="">
-            <label for="vezeteknev"
-              >E-Mail cím ismételt megadása<sup>*</sup></label
-            >
-            <br />
-            <input type="text" name="emailU" id="emailU" />
+            <label for="lname">Last name</label> <br />
+            <input
+              type="text"
+              name="lname"
+              id="lname"
+              placeholder="enter your last name"
+            />
           </div>
         </div>
 
-        <div class="flex ujelszo">
+        <div class="email">
           <div class="">
-            <label for="jelszo">Jelszó<sup>*</sup></label> <br />
-            <input type="text" name="jelszo" id="jelszo" />
-          </div>
-          <div class="">
-            <label for="jelszo">Jelszó ismételt megadása<sup>*</sup></label>
-            <br />
-            <input type="text" name="emailU" id="emailU" />
+            <label for="email">Email<sup>*</sup></label> <br />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="enter your email"
+            />
           </div>
         </div>
 
-        <p id="kotelezo">* - kötelező mezők</p>
-        <div class="flex-2">
-          <input
-            style="height: 2em; width: 2em"
-            type="checkbox"
-            name="tudom"
-            id="tudom"
-          />
-          <label for="tudom"
-            >Tudomásul vettem és elfogadom az
-            <span>Általáos Szerződési Feltételek</span>-et, valamint az
-            <span>Adatkezelési tájékoztató</span>-ban foglaltakat.<sup
-              >*</sup
-            ></label
-          >
-        </div>
-        <div class="flex-2">
-          <input
-            style="height: 2em; width: 2em"
-            type="checkbox"
-            name="tudom2"
-            id="tudom2"
-          />
-          <label for="tudom2"
-            >Szeretnék feliratkozni a <span id="bold">A dm Hírlevelem</span>-re.
-            A hírlevélről bármikor leiratkozhatok.
-            <span>A Hozzájárulás a dm hírlevélhez</span>-t elolvastam és
-            elfogadom.</label
-          >
+        <div class="flex-between">
+          <div class="">
+            <label for="password">Password<sup>*</sup></label> <br />
+            <input
+              type="text"
+              name="password"
+              id="password"
+              placeholder="enter your first password"
+            />
+          </div>
+          <div class="">
+            <label for="cpassword">Convfirm password<sup>*</sup></label> <br />
+            <input
+              type="text"
+              name="cpassword"
+              id="cpassword"
+              placeholder="enter your password again"
+            />
+          </div>
         </div>
 
-        <button id="gomb" type="button">Tovább</button>
-      </div>
+        <div class="keret">
+          <div class="flex-between">
+            <div class="">
+              <label id="label" for="gender">Gender:</label> <br />
+              <input type="radio" name="male" id="male" />
+              <label for="male">Male</label>
+              <input type="radio" name="male" id="male" />
+              <label for="male">Female</label>
+            </div>
+            <div class="hobbies">
+              <label id="label" for="hobbies">Hobbies</label> <br />
+              <input type="checkbox" name="music" id="music" />
+              <label for="music">Music</label>
+              <input type="checkbox" name="sports" id="sports" />
+              <label for="sports">Sports</label>
+              <input type="checkbox" name="Travel" id="Travel" />
+              <label for="sports">Travel</label>
+              <input type="checkbox" name="Movies" id="Movies" />
+              <label for="sports">Movies</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="keret">
+          <div class="flex-between">
+            <div class="">
+              <label id="label" for="soic">Source of Income</label> <br />
+              <select name="soic" id="soic">
+                <option value="">Employed</option>
+              </select>
+            </div>
+            <div class="hobbies flex">
+              <div class="">
+                <label id="label" for="hobbies">Income</label> <br />
+                <input type="range" class="istyle" />
+              </div>
+              <div class="ar">
+                <p>20K</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="keret">
+          <div class="flex-between">
+            <div class="">
+              <div class="">
+                <label id="label" for="soic">Upload Profile Picture</label>
+                <br />
+              </div>
+              <div class="flex">
+                <input type="file" name="" id="" />
+                <p id="file">No file chosen</p>
+              </div>
+            </div>
+            <div class="utolso">
+              <label id="label" for="age">Age</label> <br />
+              <input type="text" name="" value="18" id="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="keret">
+          <label for="bio" id="label" class="bio">Bio</label>
+        </div>
+        <div class="bio">
+          <textarea name="bio" id="bio" cols="57" rows="7"></textarea>
+        </div>
+
+        <div class="gomb">
+          <hr />
+          <button>Create</button>
+          <p style="visibility: hidden">asd</p>
+        </div>
+      </main>
     </div>
   </body>
 </html>

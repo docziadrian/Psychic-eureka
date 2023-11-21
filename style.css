@@ -1,148 +1,164 @@
-html,
-body,
-.container {
-  margin: 0;
-  padding: 0;
-  top: 0;
-  background-color: rgba(250,249,248,255);
-  
-}
-
 * {
   margin: 0;
   padding: 0;
 }
 
-input[type="radio"] {
-  margin-top: 8px;
-  -ms-transform: scale(1.8); /* IE 9 */
-  -webkit-transform: scale(1.8); /* Chrome, Safari, Opera */
-  transform: scale(1.8);
-  margin-left: 2px;
-}
-
-input[type="radio"]:nth-child(2n) {
-  margin-right: 4px;
-}
-
-.w-64 {
-  display: flex;
+body {
+  background-color: #4a7485;
 }
 sup {
-  position: relative;
-  top: 4px;
+  position: absolute;
+  top: 3;
+  margin-left: 3px;
+  color: #0cbd97;
+  font-size: medium;
 }
 
-.container {
-  padding-top: 25px !important;
+label {
+  color: #0cbd97;
+  font-size: medium;
+  font-weight: bolder;
+}
+
+main {
+  display: block;
+  margin: 20px auto;
+  background-color: white;
+  width: 78%;
+  border-radius: 5px;
+}
+
+h1 {
+  text-align: center;
+  background-color: #eef0f0;
+  color: #686968;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.flex-between {
+  margin-top: 13px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.email {
+  margin-top: 13px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+input[type="text"] {
+  height: 1.5em;
+  width: 15.5em;
+}
+
+input[type="email"] {
+  height: 1.5em;
+  width: 32.5em;
+}
+
+input[type="file"] {
+  height: 1.5em;
+  width: 6.5em;
+}
+
+input[type="range"] {
+  width: 13.2em !important;
+  margin-top: 2px !important;
+  margin-right: 5px !important;
+  margin-left: 4px !important;
+}
+
+select {
+  height: 1.5em;
+  width: 16em;
+}
+.keret {
+  width: 42%;
   display: block;
   margin: 0 auto;
-  text-align: center;
-  color: rgba(23,39,74,255);
-  width: 50%;
-  background-color: white;
-  height:50rem !important;
 }
 
-.main {
-  color: rgba(0, 0, 0, 0.719) !important;
-  width: 90%;
-  text-align: left;
-  margin: auto;
-  background-color: white;
+.keret .flex-between {
+  justify-content: space-between;
+  gap: 0px !important;
+}
+
+input[type="checkbox"] {
+  height: 0.9em;
+  width: 0.7em;
+}
+
+.keret label {
+  font-size: 13px;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  color: #706e6d;
+}
+
+.hobbies {
+  font-size: 15px !important;
+  width: 50%;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+}
+
+#label {
+  color: #0cbd97;
+  font-size: 100%;
 }
 
 .flex {
   display: flex;
-  justify-content: left;
-  gap: 20px;
 }
 
-input[type="text"] {
-  height: 2.1em;
-  width: 18.7em;
-}
-input[type="number"] {
-  height: 2em;
-  width: 5em;
-}
-
-::placeholder {
-  padding-left: 5px;
+.ar {
+  margin-top: 12px;
+  background-color: #0cbd97;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 4px !important;
+  padding: 3px;
+  color: white;
 }
 
-.email {
-  margin-top: 15px;
+#file {
+  margin-left: 5px;
 }
 
-#kotelezo {
-  margin-top: 25px;
-  margin-bottom: 25px;
+.bio {
+  text-align: center;
 }
 
-.flex-2 {
-  display: flex;
-  margin: auto;
-  gap: 5px;
-  margin: 15px 0px !important;
+.bio {
+  margin-top: 0px;
 }
 
-span {
-  text-decoration: underline;
+.utolso {
+  margin-bottom: 15px;
 }
 
-#bold {
-  text-decoration: none !important;
-  font-weight: bold;
+textarea {
+  margin-bottom: 20px;
 }
 
-.flex-2 label {
-  margin-top: 8px;
-}
-
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  opacity: 1;
-}
-
-input[type="checkbox"] {
-  outline: 3px auto rgba(255, 255, 255, 0.685);
-
-}
-
-input[type="radio"] {
-  outline: 3px auto rgba(255, 255, 255, 0.685);
+.gomb {
+  margin: 0 0;
+  background-color: #eef0f0;
+  height: 3em;
 }
 
 button {
   float: right;
-  margin-right: 35px;
-  padding: 12px 20px;
-  border-radius: 20px;
-  background-color: rgba(2,39,121,255);
-  border: 0px solid white;
+  margin: 5px 23em;
+  padding: 0.7em 1.4em;
+  background-color: #0cbd97;
   color: white;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-
-
-
-.nev{
-  padding-top: 5px;
-}
-
-.ujelszo{
-  margin-top: 4px;
-}
-
-#le{
-  padding-top: 5px;
-  padding-bottom: 0 !important;
-  margin-bottom: 0 !important;
-}
-
-label{
-  padding-bottom: 5px !important;
+  border: 0px;
+  border-radius: 5px;
 }
